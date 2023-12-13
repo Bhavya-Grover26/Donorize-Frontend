@@ -25,7 +25,8 @@
     "reactstrap": "^9.2.0",
     "sass": "^1.69.4",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@babel/plugin-proposal-private-property-in-object":"7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
