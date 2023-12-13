@@ -1,4 +1,5 @@
 import React, { useState , useEffect, createContext , useReducer} from 'react'
+import axios from 'axios';
 import { BrowserRouter as Router, Route, Routes , useNavigate} from 'react-router-dom'; // Import Routes
 
 import Home from './components/Home/Home';
@@ -60,7 +61,7 @@ const Routing = () => {
   }, []);
   
   
-  
+
   
   return (
     <Routes>
@@ -87,6 +88,22 @@ const Routing = () => {
 function App() {
   const [userState, userDispatch] = useReducer(userReducer, userInitialState);
   const [orgState, orgDispatch] = useReducer(orgReducer, orgInitialState);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Make a single API request using Axios to the base URL
+        const response = await axios.get('https://donorize.onrender.com/api/data'); // Replace with your actual endpoint
+
+        // Dispatch actions to update state based on the API response
+        userDispatch({ type: 'USER', payload: response.data.user });
+        orgDispatch({ type: 'ORG', payload: response.data.org });
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <UserContext.Provider value={{ state: userState, dispatch: userDispatch }}>
