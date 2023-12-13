@@ -92,7 +92,7 @@ function App() {
     const fetchData = async () => {
       try {
         // Make a single API request using Axios to the base URL
-        const response = await axios.get('https://donorize.onrender.com/api/data'); // Replace with your actual endpoint
+        const response = await axios.get('https://donorize.onrender.com/'); // Replace with your actual endpoint
 
         // Dispatch actions to update state based on the API response
         userDispatch({ type: 'USER', payload: response.data.user });
