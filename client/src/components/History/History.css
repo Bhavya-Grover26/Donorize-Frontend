@@ -1,0 +1,170 @@
+.profile {
+    padding: 1.8rem 0;
+  }
+  
+  .profile::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .profile-image {
+    float: left;
+    width: calc(8% - 0.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .profile-image img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .profile-user-settings,
+  .profile-stats,
+  .profile-bio {
+    float: left;
+    width: calc(66.666% - 1rem);
+  }
+  
+  .profile-user-settings {
+    margin-top: 0.7rem;
+  }
+  
+  .profile-user-name {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 0; 
+  }
+  
+  .profile-edit-btn {
+    font-size: 0.7rem; 
+    line-height: 1.5;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 2rem; 
+    padding: 0.8rem 1.6rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    margin-top: 8.9rem;
+  }
+  
+  .profile-settings-btn {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+  
+  .profile-stats {
+    margin-top: 0.5rem; 
+  }  
+  
+  .profile-stats li {
+    display: inline-block;
+    font-size: 1.0rem;
+    line-height: 1.3;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .profile-stats li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .profile-bio {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 1.3rem;
+  }
+  
+  .profile-real-name,
+  .profile-stat-count,
+  .profile-edit-btn {
+    font-weight: 600;
+  }
+
+  /* Container for the donation history */
+.container2 {
+    max-width: 1700px;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Donation history table */
+  .donation-history {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Header row */
+  .donation-row.header {
+    background-color: #00a89d;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 20px;
+  }
+  
+  /* Donation rows */
+  .donation-row {
+    border-top: 0.8px solid #00a89d; /* Thin black line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  /* Columns */
+  .donation-cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  /* Campaign image */
+  .campaign-image img {
+    width: 80px; /* Square-shaped image */
+    height: 80px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 20%; /* Make it a circle */
+    margin-right: 10px; /* Add spacing between image and title */
+  }
+  
+  /* Campaign title */
+  .campaign-title {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1; /* Expand title to fill available space */
+  }
+  
+/* Responsive table layout */
+@media (max-width: 768px) {
+    .donation-history {
+      display: block;
+    }
+  
+    .donation-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .donation-cell {
+      flex: none;
+    }
+  
+    .campaign-image img {
+      width: 100%;
+      height: auto;
+      margin-right: 0; /* Remove spacing between image and title on smaller screens */
+    }
+  }
+  

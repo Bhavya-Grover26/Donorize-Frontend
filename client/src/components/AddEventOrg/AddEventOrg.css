@@ -1,0 +1,140 @@
+/* AddEventOrg.css */
+
+.Addevent {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .LeftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .UploadButton {
+    background-color: #0074bd;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .UploadInput {
+    display: none;
+  }
+  
+  .PreviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px;
+  }
+  
+  .PreviewImage {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .RightSection {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+/* AddEventOrg.css */
+
+.EventInput {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 50px; /* Set the desired height for EventInput */
+  }
+  
+  .ShortDescriptionTextArea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px; /* Set the desired height for ShortDescriptionTextArea */
+  }
+  
+  .LongDescriptionTextArea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 150px; /* Set the desired height for LongDescriptionTextArea */
+  }
+  
+  .MaximumObjectivesInput {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 70px; /* Set the desired height for MaximumObjectivesInput */
+  }
+  
+  .SubmitButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .SubmitButton:hover {
+    background-color: #45a049;
+  }
+
+  .button-container5 {
+    position: relative;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+     /* Add border style */
+    border-radius: 5px;
+    /* Add other styles for the container if needed */
+  }
+  
+  .submit-button {
+    position: absolute;
+    bottom: 0;
+    left: -220px;
+    transform: translateX(-50%);
+    margin-bottom: -80px; /* Adjust margin based on the button size */
+    background-color: #0074bd; /* Add background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add other button styles */
+  }
+
+  .submit-button:hover{
+    position: absolute;
+    bottom: 0;
+    left: -220px;
+    transform: translateX(-50%);
+    margin-bottom: -80px; /* Adjust margin based on the button size */
+    background-color: #f25602; /* Add background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add other button styles */
+  }
+  
+  

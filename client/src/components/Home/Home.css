@@ -1,0 +1,227 @@
+/* Home.css */
+  
+  /* Styles for the root element of the Home component */
+  .home-page {
+    padding: 1 1 1 1px;
+  }
+  
+  /* Styles for the Slider component */
+  
+  /* Styles for the individual slides within the Slider component */
+  .home-page .slick-slide {
+    text-align: center;
+  }
+  
+  /* Styles for the images within the Slider component */
+  .home-page .slick-slide img {
+    /* Your CSS styles specific to the images */
+    /* For example: */
+    width: 100%;
+    height: 450px;
+  }
+
+  /* Styles for the custom arrows */
+.slick-prev,
+.slick-next {
+  width: 40px; /* Adjust the arrow width as needed */
+  height: 40px; /* Adjust the arrow height as needed */
+  background: transparent; /* Transparent background */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Place the arrows above the images */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+/* Styles for the custom arrows on hover */
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background on hover */
+}
+
+/* Style the arrow icons (you can use your own icons here) */
+.slick-prev:before,
+.slick-next:before {
+  font-family: FontAwesome; /* Use the FontAwesome icon font */
+  font-size: 24px; /* Adjust the icon size as needed */
+  color: #fff; /* Arrow color */
+}
+
+.slick-prev:before {
+  content: '\f104'; /* FontAwesome left arrow icon */
+}
+
+.slick-next:before {
+  content: '\f105'; /* FontAwesome right arrow icon */
+}
+
+  /* Add this CSS to your Home.css or a separate CSS file */
+
+/* Step-by-Step Process Container */
+.step-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Individual Step */
+/* Add this CSS to your existing styles */
+
+/* Step Container */
+.step-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  margin-top: 40px;
+}
+
+/* Individual Step */
+.step {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.step-icon {
+  background-color: #00a89d;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  overflow: hidden; /* Clip the overflowing content */
+  position: relative; /* Needed for the ::before pseudo-element */
+}
+
+.step-icon::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc00;
+  border-radius: 0 0 50% 50%; /* Create a semicircle at the bottom */
+  bottom: -100%; /* Initially hidden below the circle */
+  left: 0;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add a transition for smooth filling effect */
+}
+
+.step-icon:hover::before {
+  bottom: 0; /* Show the semicircle on hover */
+}
+
+/* Hide the yellow fill when fully revealed */
+.step-icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc00;
+  border-radius: 0 0 50% 50%; /* Create a semicircle at the bottom */
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Add a transition for smooth hiding effect */
+}
+
+.step-icon:hover::after {
+  opacity: 1; /* Hide the yellow fill when fully revealed */
+}
+
+/* Add styles for the icons */
+.step-icon i {
+  position: relative;
+  z-index: 1; /* Ensure the icons are above the yellow fill */
+}
+
+
+/* Step Heading */
+.step h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center; /* Center-align the heading */
+}
+
+/* Step Subtitle */
+.step p {
+  font-size: 14px;
+  color: #777; /* Subtitle color */
+  text-align: center; /* Center-align the paragraph */
+  word-wrap: break-word; /* Wrap long words/sentences */
+}
+
+.green-background {
+  background-color: #00a89d; /* Change this to your desired green color */
+  height: 500px; /* Adjust the height as needed */
+  display: flex;
+  margin-top: 40px;
+}
+
+.events-text {
+  color: #ffcc00; /* Set text color to yellow */
+  font-size: 32px; /* Adjust the font size as needed */
+  font-weight: bold; /* Set font weight to bold */
+  margin-bottom: 8cm;
+}
+
+/* Styles for the second text */
+.events-text2 {
+  color: white;
+  font-size: 18px;
+  text-align: center; /* Center-align the text */
+  max-width: 250px; /* Adjust the maximum width as needed */
+  margin-top: 120px; /* Add some margin at the top */
+  margin-left: -200px;
+}
+
+/* Add this to Home.css */
+.events-container2 {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px; /* Adjust margin as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  margin-left: 100px;
+
+}
+
+.eventcard {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width of each card */
+  max-width: calc(100% - 20px); /* Set max-width to allow some space between text and cards */
+  scroll-snap-align: start;
+  margin-right: 15px; /* Adjust margin as needed */
+}
+
+.eventcard img {
+  width: 100%;
+  height: 150px; /* Adjust the height of the image */
+  object-fit: cover;
+}
+
+.eventcard h2 {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.eventcard p {
+  color: #555;
+}
+
+.eventcard button {
+  background-color: #ffcc00;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,71 @@
+/* Event.css (Create a CSS file and import it into your component) */
+
+.events-container {
+    background-color:  #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .event-card {
+    width: calc(25% - 20px); /* 4 cards in one row with some spacing */
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 450px; /* Fixed height for the card */
+    width: calc(25% - 20px); /* 4 cards in one row with some spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .event-card img {
+    max-width: 100%;
+    max-height: 200px; /* Fixed height for the image */
+    width: auto;
+    border-radius: 5px;
+  }
+  
+  .event-card h2 {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  .event-card h2:hover {
+    color:#00a89d;
+    cursor: pointer;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    margin-top: 5px;
+
+    text-align: left;
+    height: 500px; /* Limit subheading to 100px in height */
+  }
+  
+  .event-card button {
+    background-color: #00a89d;
+    color: #fff;
+    padding: 10px 20px;
+    width: 50%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-style: bold;
+    cursor: pointer;
+    align-self: center; /* Center-align the button within the card */
+    width: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-card button:hover {
+    background-color: #ffcc00; /* Change color on hover */
+  }
+
+  
+  
